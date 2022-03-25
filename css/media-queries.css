@@ -1,0 +1,110 @@
+@media (max-width: 900px) {
+    .blogs-main {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .blogs-news-container {
+        padding: 0;
+    }
+    .blogs-news-img-container {
+        grid-row: 2;
+    }
+    .blogs-news-info-container {
+        grid-row: 3;
+        grid-column: 1;
+    }
+    .blogs-posts-container {
+        padding: 0;
+    }
+    .blogs-posts-container div,
+    .profile-projects-container div{
+        /* display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        gap: 40px 20px;
+        padding: 0 20px; */
+        display: inline-block;
+    }
+    .contact-main-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+}
+@media (max-width: 430px) {
+    header .header-icons-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    header .header-icons-container .icons {
+        display: flex;
+        margin-right: 0;
+    }
+    [class^="flaticon-"]:before, [class*=" flaticon-"]:before, [class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+        margin-left: 0;
+    }
+    nav .nav-logo-container {
+        margin-left: 0;
+    }
+    nav .nav-logo-container img {
+        width: 190px;
+    }
+    nav .nav-profile-link {
+        margin-right: 20px;
+        padding-bottom: 15px;
+    }
+    nav .nav-profile-link a {
+        font-size: 1.4rem;
+    }
+    .home-main {
+        grid-template-columns: 1fr;
+    }
+    .home-main .main-text-container h1 {
+        font-size: 3rem;
+    }
+    .home-main .main-button-container button{
+        width: 145px;
+        height: 55px;
+        margin-top: 80px;
+    }
+    .main-button-container button a {
+        font-size: 1.8rem;
+    }
+    .blogpost-img-container {
+        padding: 0 0 20px;
+    }
+    .blogpost-main-container {
+        padding: 0 25px 40px;
+    }
+    .blogpost-main-container h3 {
+        text-align: center;
+    }
+    .blogpost-main-container article h1 {
+        font-size: 3rem;
+        padding: 30px 0;
+    }
+    .blogpost-main-container article p {
+        font-size: 1.2rem;
+    }
+    .contact-main-container {
+        height: 400px;
+    }
+    .contact-main-container img {
+        width: 80px;
+    }
+    .contact-left,
+    .contact-right {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        justify-items: center;
+    }
+    .contact-text-container {
+        margin: 5px 0;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    footer p {
+        font-size: 1.2rem;
+    }
+}
